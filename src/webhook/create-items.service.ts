@@ -2,13 +2,10 @@ import { config } from '../config.js';
 import { createItem } from '../monday/items.repository.js';
 import type { CreatedItem } from '../types.js';
 import { toMondayItemDraft } from './fortianalyzer.mapper.js';
-import type { FortiNotification } from './fortianalyzer.schema.js';
+import type { FortiAlert } from './fortianalyzer.schema.js';
 
-/** One FortiAnalyzer notification can carry several alerts; each becomes its own item. */
-export async function createItemsFromNotification(
-  notification: FortiNotification,
-): Promise<CreatedItem[]> {
-  const alerts = notification.fortianalyzer_notification.data;
+/** One notification can carry several alerts; each becomes its own item. */
+export async function createItemsFromAlerts(alerts: FortiAlert[]): Promise<CreatedItem[]> {
   const created: CreatedItem[] = [];
 
   for (const alert of alerts) {
