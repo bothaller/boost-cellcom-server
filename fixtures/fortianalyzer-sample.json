@@ -1,0 +1,35 @@
+{
+  "fortianalyzer_notification": {
+    "type": "event alert",
+    "adom": "ICL-Global-SDWAN",
+    "from": "FAZVMSTM26001955",
+    "timestamp": 1788330678,
+    "apiver": 1,
+    "data": [
+      {
+        "ackflag": "no",
+        "alertid": "202609011000031636",
+        "logcount": 1,
+        "logtype": "app-ctrl",
+        "devtype": "FortiAnalyzer",
+        "subtype": "",
+        "alerttime": 1788330678,
+        "devid": "FAZVMSTM26001955",
+        "devname": "ICL-EU-AZ-FAZ",
+        "eventtype": "appevent",
+        "groupby1": "ICL-RO-BUC-FGT",
+        "groupby2": "Did not receive any log from device ICL-RO-BUC-FGT[FGT50GTK26017245] in past 68d20m6s (97940 minutes).",
+        "groupby3": "",
+        "severity": "high",
+        "subject": "DEVICE OFFLINE: ICL-RO-BUC-FGT",
+        "tag": "Monday,NOC,Device",
+        "triggername": "Monday-Device-Offline",
+        "rulename": "Device offline detected",
+        "vdom": "ICL-Global-SDWAN",
+        "extrainfo": "Device ICL-RO-BUC-FGT (FGT50GTK26017245) is offline: Did not receive any log from device ICL-RO-BUC-FGT[FGT50GTK26017245] in past 68d20m6s (97940 minutes).",
+        "log-length": 534,
+        "log-detail": "devid=\"FAZVMSTM26001955\" vd=\"ICL-Global-SDWAN\" itime=1788330672 type=\"appevent\" user=\"system\" logid=\"220001\" subtype=\"logdev\" eventtype=\"logging-status\" level=\"warning\" desc=\"Device offline\" logdev_id=\"FGT50GTK26017245\" logdev_name=\"ICL-RO-BUC-FGT\" logdev_offline_duration=\"97940\" msg=\"Did not receive any log from device ICL-RO-BUC-FGT[FGT50GTK26017245] in past 68d20m6s (97940 minutes).\""
+      }
+    ]
+  }
+}
